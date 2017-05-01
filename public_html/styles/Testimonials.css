@@ -1,0 +1,606 @@
+@charset "UTF-8";
+
+/* Prepared by Team AVMM for CSS class project.
+    Please note that some feature generate an error at CSS validation
+    but are current best practice and widely supported in major browers. */
+
+body{
+	font-family: 'Centtury Gothic', Arial, Helvetica, sans-serif;
+	margin:0 auto;
+     background-image:url("../assets/images/back.jpg");
+     
+   }
+
+#container{
+	width: 990px;
+	margin:0 auto 40px;
+	padding: 20px; 
+    border-radius:8px;
+    box-shadow: 1px 1px 20px rgba(0,0,5,0.2);
+    background-color:rgba(0, 0, 5, 0.5);
+    
+}
+
+#main_header{
+	
+   	background-image:url("../assets/images/mainheader.jpg");
+	height: 240px;
+	width: 100%;
+	margin:0 auto;
+	padding:0px;
+}
+
+header h4{
+	padding: 10px 0px 10px 0px;
+	margin: 0px;
+	text-align: center;
+}
+
+nav{
+    float:right;
+	background-color:#262625;  
+    width:93%;    
+}
+#nav_block{
+    background-color:#262625; 
+}
+#inner_nav img{
+    float:left;
+    background-color:#262625; 
+    width:52px; 
+}
+#inner_nav{
+    width:990px;
+    background-color:#262625;
+     margin:0 auto;
+    height:52px;
+}
+nav ul{
+	padding:0px;   
+    
+}
+nav ul li{
+	display: inline;
+	padding: 0px 30px 0px 35px;
+	margin: 0px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color:#fff;
+    padding:10px;
+}
+
+nav ul li a:hover{
+	text-decoration: none;	
+	transition: 0.8s ease;
+    background-color:#f29021;
+    padding:10px;
+   color:#262625;
+}
+/* ===================================================================  index.html =========================================================== */
+a{
+    text-decoration:none;
+}
+
+#main_header{
+	background-image:url("../assets/images/mainheader.jpg");
+	height: 240px;
+	width: 100%;
+	margin:0 auto;
+	padding:0px;
+}
+
+/*-----------------------------------------------callouts in index()--------------------------------------------------*/
+.demo-3 {
+    position:relative;
+    width:300px;
+   
+    overflow:hidden;
+    float:left;
+    margin-right:20px
+}
+.demo-3 figure {
+    margin:0;
+    padding:0;
+    position:relative;
+    cursor:pointer;
+    margin-left:-30px;
+
+}
+.demo-3 figure img {
+
+    position:relative;
+    z-index:10;
+
+   
+}
+.demo-3 figure figcaption {
+    display:block;
+    position:absolute;
+    z-index:5;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+.demo-3 figure h2 {
+    font-family:'Lato';
+    color:#fff;
+    font-size:20px;
+    text-align:left
+}
+.demo-3 figure p {
+    display:block;
+    font-family:'Lato';
+    font-size:16px;
+    text-align:justify;
+    line-height:18px;
+    margin:0;
+    color:#fff;
+    text-align:left
+}
+.demo-3 figure figcaption {
+    top:0;
+    left:0;
+    width:280px;
+    height:320px;
+    padding:29px 44px;
+    background-color:rgba(242,144,33,1);
+    text-align:center;
+    backface-visibility:hidden;
+    -webkit-transform:rotateY(-180deg);
+    -moz-transform:rotateY(-180deg);
+    transform:rotateY(-180deg);
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s;
+    border-radius:10px;
+}
+.demo-3 figure img {
+    backface-visibility:hidden;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s;
+    border-radius:10px;
+}
+.demo-3 figure:hover img,figure.hover img {
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    transform:rotateY(180deg)
+}
+.demo-3 figure:hover figcaption,figure.hover figcaption {
+    -webkit-transform:rotateY(0);
+    -moz-transform:rotateY(0);
+    transform:rotateY(0)
+}
+#ind_firstsection article {
+	border:1px solid #262625;	
+	float: left;
+	width: 300px;
+	box-shadow: 1px 1px 12px rgba(0,0,0,0.2);
+    margin:13px;
+    background-color:#262625;
+
+}
+
+/*------------------------------------------------slide --------------------------------------------------------*/
+
+
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+div.slider div { 
+  margin: 0; 
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+div#captioned-gallery { 
+  width: 990px;
+  height:450px;
+overflow: hidden;
+margin: 0 auto;
+}
+div.slider { 
+  position: relative; width: 500%;
+  
+  animation: 30s slidy infinite; 
+}
+div.slider div { 
+  width: 20%; 
+  display: inline-block;  position: inherit; 
+}
+div.slider img { width: 100%; height: auto; }
+
+/*======================== Index css ends   ======================================================================================== */
+#firstsection article {
+	border:1px solid #DADADA;
+	border-radius: 5px;
+	float: left;
+	width: 300px;
+	box-shadow: 1px 1px 12px rgba(0,0,0,0.2);
+    margin:13px;
+    background-color:#fff;
+
+}
+
+#firstsection article header{
+	background-color:#595753; 
+	border-radius: 4px 4px 0px 0px;
+	text-align: center;
+	padding: 5px;
+    color:#f29021;
+}
+
+#firstsection article header img{
+	border-radius: 50%;
+	width:100px;
+	height: 100px;
+	margin-top: 8px;
+	box-shadow: 0 0 11px 1px rgba(0, 0, 0, 0.5);
+}
+.story_iframe{
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+   border:0px;
+}
+article blockquote:before{
+	content: "“";
+}
+
+#title{
+	text-align: center;
+    padding-top:23px;
+    
+}
+
+#secondsection article {
+	border:1px solid #DADADA;
+	border-radius: 5px;
+	box-shadow: 1px 1px 12px rgba(0,0,0,0.2);
+    margin:10px;
+    float: left;
+
+}
+#secondsection article header{
+	background-color:#595753;
+	border-radius: 4px 4px 0px 0px;
+	text-align: left;
+	padding: 5px;
+    color:#f29021;
+}
+#secondsection article header:hover{
+	background-color: #f29021;
+	color:#fff;
+	transition: 0.5s ease;
+	cursor: pointer;
+}
+#secondsection article header img{
+	border-radius: 50%;
+	width:100px;
+	height: 100px;
+	float: left;
+	margin-top: 8px;
+	box-shadow: 0 0 11px 1px rgba(0, 0, 0, 0.5);
+}
+#secondsection article header h4{
+    text-align:left;    
+}
+#secondsection article blockquote{
+	background-color: #DADADA;	
+	padding: 20px;
+    margin:0px;
+    line-height:22px;
+    text-align:justify;
+}
+#secondsection article blockquote a{
+	text-decoration:none;
+    color:#f29021;
+}
+#secondsection article blockquote a:hover{
+	text-decoration:none;
+    color:#000;
+    transition: 0.5s ease;
+}
+
+#story{
+	width: 70%;
+	margin: 20px 30px 20px 145px;
+}
+
+#story label{
+	width: 150px;
+	float: left;
+}
+
+#story textarea, #story input {
+    float:left;
+    border:1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius:2px;
+}
+input:focus:required:invalid {
+    background-image:url("../assets/images/error.png");
+    background-repeat:no-repeat;
+    background-position:98% center;
+    background-color:lightgoldenrodyellow;
+}
+
+input:required:valid {
+    background-image: url("../assets/images/accept.png");
+    background-repeat:no-repeat;
+    background-position:98% center;
+}
+
+input[type="email"]:focus:required:invalid{
+    background-image:url("../assets/images/email_error.png");
+}
+
+input[type="submit"]{
+	clear: both;
+   background-color: #68b12f;
+    background: -webkit-linear-gradient(top, #68b12f, #50911e);
+    background: -moz-linear-gradient(top, #68b12f, #50911e);
+    background: -ms-linear-gradient(top, #68b12f, #50911e);
+    background: -o-linear-gradient(top, #68b12f, #50911e);
+    background: linear-gradient(#68b12f, #50911e);
+    border: 1px solid #509111;
+    border-bottom: 1px solid #5b992b;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #9fd574;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+}
+
+input[type="submit"]:hover{
+    opacity:.85;
+    cursor: pointer;
+}
+
+.join_us_container{
+	background-image: url("../assets/images/slider3.jpg"); 
+	background-origin: border-box;
+	background-size: 100% 100%;
+   
+}
+
+/* Start of css-only tabbed panels.
+    Adapted from example in CSS3 Pushing the limits. */
+.panel {
+       position: absolute;
+    width: 990px;
+    background: #fff;
+    border-radius: 0 10px 10px 10px;
+    padding: 3%;
+    box-sizing: border-box;
+    opacity: 0;
+    pointer-events: none; /* Disable mouse interaction with elements on hidden panels. CSS validator returns an error but the property is widely supported according to cainuse. */
+} 
+
+.imageFloatLeft {
+    float: left;
+    margin-right: 40px;
+}
+
+.imageFloatRight {
+    float: right;
+    margin-left: 40px;
+}
+
+.clearBoth {
+    clear: both;
+}
+#tabcontainer{
+    height:960px;
+    width: 990px;
+	margin:0 auto 40px;
+	padding: 20px; 
+    border-radius:8px;
+    box-shadow: 1px 1px 20px rgba(0,0,5,0.2);
+    background-color:rgba(0, 0, 5, 0.5);
+     
+}
+.reversedImageBackground {
+    background: #888;
+    padding: 20px;
+}
+#tabcontainer{
+    height:960px;
+    width: 990px;
+	margin:0 auto 40px;
+	padding: 20px; 
+    border-radius:8px;
+    box-shadow: 1px 1px 20px rgba(0,0,5,0.2);
+    background-color:rgba(0, 0, 5, 0.5);
+     
+}
+article.tabs, div.tabs {
+    width: 100%;
+    margin: 0 auto;
+    height: 600px;
+}
+article.tabs .panels>input, div.tabs .panels>input {
+    opacity: 0;
+    height: 40px;
+}
+    
+article.tabs .panels>label, div.tabs .panels>label {
+    cursor: pointer;
+    background: linear-gradient(#666,#555);
+    color: #eee;
+    border-radius:5px 5px 0 0;
+    padding: 1.5% 3%;
+    float: left;
+    margin-right: 2px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+
+article.tabs .panels>input:checked + label, div.tabs .panels>input:checked + label {
+    background: #fff;
+    color: #333;
+}
+
+.tabs input:nth-of-type(1):checked~div:nth-of-type(1),
+.tabs input:nth-of-type(2):checked~div:nth-of-type(2),
+.tabs input:nth-of-type(3):checked~div:nth-of-type(3),
+.tabs input:nth-of-type(4):checked~div:nth-of-type(4) {
+    opacity: 1;
+    transition: 0.3s;
+    pointer-events: auto; /* Reset mouse interaction for on top visible panel. CSS validator returns an error but the property is widely supported according to caniuse. */
+}
+
+/* End of tabbed panels */
+
+
+/* Miguel Additional CSS start */
+
+.centerFig {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/* Miguel Additional CSS end */
+
+#main_footer{
+   clear:both; 
+    width:100%;
+    background-color:#262625; 
+}
+#footer_container{
+    width:990px;
+     background-color:#262625; 
+     height:40px;
+     color:#DADADA;
+     margin:0 auto;
+}
+#footer_container a{
+    text-decoration:none;
+    color:#fff;
+}
+#footer_container a:hover{
+    text-decoration:none;
+    color:#f29021;
+}
+#site_map{
+    height:500px;
+}
+#site_map ul li a{
+    text-decoration:none;
+    color:#fff;
+    line-height:28px;
+}
+#site_map ul li a:hover{
+    text-decoration:none;
+    color:#f29021;
+    line-height:28px;
+}
+.ytp-thumbnail-overlay{
+    background-color:#595753;
+}
+
+#testimonial_stories article {
+    line-height:22px;
+    text-align:justify;
+}
+
+#testimonial_stories .image{
+    text-align:center !important;
+}
+.ytp-thumbnail-overlay{
+    background-color:#595753;
+}
+
+/*Azam Css Document start*/
+
+.rec_leftcolumn { 
+ display: inline;
+ margin: 10px;
+ padding: 0;
+ width: 35%;
+ float: left;
+ color: #333;
+ text-align:justify;
+}
+
+
+.rec_rightcolumn { 
+ float: left;
+ margin: 10px 13px;
+ padding: 0;
+ width: 55%;
+ display: inline;
+ position: relative;
+ color: #333;
+ text-align:justify;
+}
+
+/*Azam Css Document end*/
+
+/* Start of exisiting form of contact us and story css */
+
+input.default-to-error{
+	-webkit-animation: default-to-error 0.5s;
+	-moz-animation: default-to-error 0.5s;
+	-animation: default-to-error 0.5s;
+	  background-position:right -28px;	  
+	  -webkit-box-shadow:0 0 7px rgba(243,38,36, 0.6); 
+	-moz-box-shadow: 0 0 7px rgba(243,38,36, 0.6); 
+	box-shadow:0 0 7px rgba(243,38,36, 0.6); 
+}
+
+input.default-to-success{
+	-webkit-animation: default-to-success 0.5s;
+	-moz-animation: default-to-success 0.5s;
+	-animation: default-to-success 0.5s;
+	  background-position:right 0px;	  	
+	-webkit-box-shadow:0 0 7px rgba(161,199,54, 0.6); 
+	-moz-box-shadow: 0 0 7px rgba(161,199,54, 0.6); 
+	box-shadow:0 0 7px rgba(161,199,54, 0.6); 
+}
+
+/* End of existing of contact us and storycss*/
+
+/* Appointment form additional CSS start */
+
+.labelFloatLeftRightAlign {
+    display: inline-block;
+    float: left;
+    text-align: right;
+    width: 100px;
+    padding-right: 4px;
+}
+
+.formDivFloatLeft {
+    display: inline-block;
+    float: left;
+    padding-right: 20px;
+}
+
+form#appointmentRequest label, form#appointmentRequest input, form#appointmentRequest div {
+    margin-top: 4px;
+}
+
+form#appointmentRequest fieldset {
+    margin-top: 5px;
+}
+
+/* Appointment form additional CSS end */

@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="styles/Testimonials.css" rel="stylesheet" type="text/css" />
+    <title>Contact Us|Make an appointment|Share your story | Vegetarianism at John Abbott</title>
+    <meta name="description" content="For Sending information" />
+    <meta name="keywords" content="Fist name,Last Name,email Address,Message us ">
+</head>
+<body>
+    <div id="nav_block">
+        <div id="inner_nav">
+            <nav>
+                <ul>
+                     <li><a href="Index.html">Home</a></li>                    
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="Recipes.html">Recipes</a></li>
+                    <li><a href="Testimonials.html">Testimonials</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>      
+            <img src="assets/images/logo2.png" width="52" height="52" alt="Vegan_logo" title="Vegan" >
+        </div>
+        </div>
+		<header id="main_header">
+			
+		</header>
+
+    <div id="container">
+        <article class="tabs">
+            <div class="panels">
+                <input id="one" name="tabs" type="radio" checked="checked" />
+                <label for="one">Make an appointment</label>
+                <div class="panel content">
+                    <h2>Request an appointment with a nutritionist</h2>
+                    <form id="appointmentRequest" name="appoinmentRequest" action="thankyou.html" method="post">
+                        <fieldset>
+                            <legend>Your name and ID</legend>
+                            <label for="appointmentFirstName" class="labelFloatLeftRightAlign">Firstname: </label>
+                            <input type="text" maxlength="20" required="required" id="appointmentFirstName" name="appointmentFirstName" />
+                            <label for="appointmentLastName">Lastname: </label>
+                            <input type="text" maxlength="30" required="required" id="appointmentLastName" name="appointmentLastName" />
+                            <label for="appointmentStudentID">StudentID: </label>
+                            <input type="text" maxlength="7" id="appointmentStudentID" name="appointmentStudentID" />
+                        </fieldset>
+                        <fieldset>
+                            <legend>Your contact info</legend>
+                            <label for="appointmentTel" class="labelFloatLeftRightAlign">Telephone: </label>
+                            <input type="tel" name="appointmentTel" id="appointmentTel" required="required" />
+                            <input type="checkbox" id="appointmentOkToText" name="appointmentOkToText" />
+                            <label for="appointmentOkToText">Is a cellphone/Ok to text?</label><br />
+                            <label for="appointmentEmail" class="labelFloatLeftRightAlign">Email: </label>
+                            <input type="email" name="appointmentEmail" id="appointmentEmail" required="required" />
+                        </fieldset>
+                        <fieldset>
+                            <legend>Availability/preferred date and time</legend>
+                            <label for="appointmentFirstChoiceDate" class="labelFloatLeftRightAlign">First choice: </label>
+                            <input type="date" required="required" name="appointmentFirstChoiceDate" id="appointmentFirstChoiceDate">
+                            <input type="time" required="required" name="appointmentFirstChoiceTime" id="appointmentFirstChoiceTime">
+                            <label for="appointmentSecondChoiceDate">Alternative choice: </label>
+                            <input type="date" required="required" name="appointmentSecondChoiceDate" id="appointmentSecondChoiceDate">
+                            <input type="time" required="required" name="appointmentSecondChoiceTime" id="appointmentSecondChoiceTime">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Your goals and concerns</legend>
+                            <div class="formDivFloatLeft">
+                                <label for="appointmentGoals">What are you hoping to get from your consultation? </label><br />
+                                <select name="appointmentGoals" id="appointmentGoals" multiple="multiple">
+                                    <option value="rightForMe">See if vegetarianism is right for me</option>
+                                    <option value="adjust">Adjust my existing vegetarian/vegan diet</option>
+                                    <option value="deficiency">Clarify some concerns about possible nutrient deficiencies</option>
+                                    <option value="new">Get new recipe or ideas about vegetarian dishes and snacks</option>
+                                </select>
+                            </div>
+                            <div class="formDivFloatLeft">
+                                <label for="appointmentFurtherComments">Comments: </label><br />
+                                <textarea id="appointmentFurtherComments" name="appointmentFurtherComments" cols="30" rows="4">Your additional comments here</textarea>
+                            </div>
+                        </fieldset>
+                        <input type="submit" value="Request your appointment now!" />
+                    </form>
+                </div>
+                <input id="two" name="tabs" type="radio" />
+                <label for="two">Share your story</label>
+                <div class="panel content">
+                        <p>
+                            Do you have a wonderful recipe that you’d like to share? We would love for you to upload it for the  Community!                        </p>
+                    <form id="contact_form" name="contact_form" method="post" action="thankyou.html">
+                        <fieldset id="story">
+                            <legend>Share your testimonial</legend>
+                            <label for="firstname">First Name:</label>
+                            <input type="text" id="firstname" name="firstname" size="20" required="required" />
+                            <br /><br />
+                            <label for="lastname">Last Name:</label>
+                            <input type="text" id="lastname" name="lastname" size="20" required="required" />
+                            <br /><br />
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" size="30" required="required" placeholder="name@example.com" />
+                            <br /><br />
+                            <label>Your recipe:</label>
+                            <textarea name="comment" rows="10" cols="60"></textarea>
+                            <br /><br />
+                            <input type="submit" id="btn_submit" size="20" value="submit" />
+                        </fieldset>
+                    </form>
+                </div>
+                <input id="three" name="tabs" type="radio" />
+                <label for="three">Contact Us</label>
+                <div class="panel contact">
+                    <form id="contact_form1" name="contact_form" method="post" action="thankyou.html">
+                        <fieldset id="story1">
+                            <legend>Contact Us</legend>
+                            <label for="firstname">First Name:</label>
+                            <input type="text" id="firstname1" name="firstname" size="20" required="required" />
+                            <br /><br />
+                            <label for="lastname">Last Name:</label>
+                            <input type="text" id="lastname1" name="lastname" size="20" required="required" />
+                            <br /><br />
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email1" name="email" size="30" required="required" placeholder="name@example.com" />
+                            <br /><br />
+                            <label>Message Us:</label>
+                            <textarea name="comment" rows="10" cols="60"></textarea>
+                            <br /><br />
+                            <input type="submit" id="btn_submit1" size="20" value="submit" />
+                        </fieldset>
+                    </form>
+                </div>
+
+                </div>
+            </article>
+        </div>
+
+	<footer id="main_footer">
+            <table id="footer_container">                
+                <tr><td>Copyright &copy; AVMM Team, 2017. All rights reserved.</td>
+                <td><a href="site_Map.html">Site Map</a></td></tr>
+            </table>
+        </footer>
+
+          </body>
+</html>
